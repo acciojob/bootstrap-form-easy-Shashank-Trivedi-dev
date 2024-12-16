@@ -13,18 +13,32 @@
 		<div class="col-4">
 	<label class="form-label" for="first-name-input">First Name</label>
 <input class="form-control" id="first-name-input" type="text" required=""></div>
+<div class="invalid-feedback">
+	First Name Required!
+  </div>
 	<div class="col-4">
 	<label class="form-label" for="last-name-input">Last Name</label>
 <input class="form-control" id="last-name-input" type="text" required=""></div>
+<div class="invalid-feedback">
+	Last Name Required!
+  </div>
 	<div class="col-4">
 	<label class="form-label" for="email-input">Email Address</label>
 <input class="form-control" id="email-input" type="email" required="" placeholder="xyz@abc.com"></div>
+<div class="invalid-feedback">
+	Email Required!
+  </div>
 	</div>
 
 	<div class="row mt-2">
 		<div class="col-6">
 	<label class="form-label" for="college-input">College</label>
-<input class="form-control" id="college-input" type="text" required=""></div>
+<input class="form-control" id="college-input" type="text" required="">
+<div class="invalid-feedback">
+	Please provide a valid college.
+  </div>
+</div>
+
 	<div class="col-3">
 	<label class="form-label" for="grad-year-select">Graduation Year</label>
 <select class="form-select" id="grad-year-select" required="">
@@ -33,16 +47,31 @@
 	<option value="2021">2021</option>
 	<option value="2022">2022</option>
 	<option value="2023">2023</option>
-</select></div>
+</select>
+<div class="invalid-feedback">
+	Please select a valid Graduation Year.
+  </div>
+</div>
+
 	<div class="col-3">
 	<label class="form-label" for="roll-no-input">Roll No.</label>
-<input class="form-control" id="roll-no-input" type="text" required=""></div>
+<input class="form-control" id="roll-no-input" type="text" required="">
+<div class="invalid-feedback">
+	Please provide a valid Roll No.
+  </div>
 </div>
+
+</div>
+
 	<div class="row mt-2">
+
 	<input class="form-check-input" id="conditions-checkbox" type="checkbox" required=""> 
 	<label class="form-label" for="conditions-checkbox">Agree to terms and conditions</label>
+	<div class="invalid-feedback">
+		You must agree before submitting.
+	  </div>
 	</div>
-	<input class="btn btn-primary" type="submit"></button>
+	<input class="btn btn-primary" type="submit" value="Submit form"></button>
 </form>
 
 	
